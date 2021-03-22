@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: linear-gradient(#18F3FD, #073656);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SymptomsController">
+   <center>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="950.0" prefWidth="1300.0">
+         <children>
+            <GridPane layoutX="81.0" layoutY="130.0" prefHeight="583.0" prefWidth="544.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="182.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="284.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label layoutX="10.0" layoutY="76.0" prefHeight="43.0" prefWidth="188.0" text="Headache">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="133.0" prefHeight="40.0" prefWidth="190.0" text="Conjunctival Congestion" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="190.0" prefHeight="40.0" prefWidth="233.0" text="Nasal Congestion" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="247.0" prefHeight="40.0" prefWidth="233.0" text="Dry Cough" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="304.0" prefHeight="40.0" prefWidth="233.0" text="Pharyngodinia" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="361.0" prefHeight="40.0" prefWidth="233.0" text="Hemoptysis" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="418.0" prefHeight="40.0" prefWidth="233.0" text="Fatigue" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="475.0" prefHeight="40.0" prefWidth="233.0" text="Breath Shortness" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="headache_yes" mnemonicParsing="false" prefHeight="36.0" prefWidth="69.0" text="Yes" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="headache" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="headache_no" layoutX="183.0" layoutY="25.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="56.0" text="No" toggleGroup="$headache" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="c_congestion_yes" mnemonicParsing="false" prefHeight="36.0" prefWidth="66.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="conjunctival_congestion" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="c_congestion_no" layoutX="183.0" layoutY="90.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="53.0" text="No" toggleGroup="$conjunctival_congestion" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="n_congestion_yes" layoutX="183.0" layoutY="90.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="63.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="nasal_congestion" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="d_cough_yes" layoutX="183.0" layoutY="155.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="54.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="dry_cough" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="pharyngodinia_yes" layoutX="183.0" layoutY="220.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="59.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="pharyngodinia" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="hemoptysis_yes" layoutX="183.0" layoutY="285.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="58.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="hemoptysis" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="fatigue_yes" layoutX="183.0" layoutY="349.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="58.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="fatigue" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="breathe_yes" layoutX="183.0" layoutY="413.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="61.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="breathe_shortness" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="n_congestion_no" layoutX="373.0" layoutY="90.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="58.0" text="No" toggleGroup="$nasal_congestion" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="d_cough_no" layoutX="373.0" layoutY="155.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="61.0" text="No" toggleGroup="$dry_cough" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="pharyngodinia_no" layoutX="373.0" layoutY="220.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="No" toggleGroup="$pharyngodinia" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="hemoptysis_no" layoutX="373.0" layoutY="285.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="61.0" text="No" toggleGroup="$hemoptysis" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="fatigue_no" layoutX="373.0" layoutY="349.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="54.0" text="No" toggleGroup="$fatigue" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="breathe_no" layoutX="373.0" layoutY="413.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="54.0" text="No" toggleGroup="$breathe_shortness" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label prefHeight="40.0" prefWidth="233.0" text="Diarrhea" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="190.0" text="Nausea" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="diarrhea_yes" layoutX="192.0" layoutY="345.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="72.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="diarrhea" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="nausea_yes" layoutX="192.0" layoutY="392.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="64.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="nausea" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="diarrhea_no" layoutX="373.0" layoutY="345.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="61.0" text="No" toggleGroup="$diarrhea" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="nausea_no" layoutX="373.0" layoutY="392.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="No" toggleGroup="$nausea" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="headache_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="c_congestion_label" alignment="CENTER" contentDisplay="CENTER" layoutX="341.0" layoutY="26.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="n_congestion_label" alignment="CENTER" contentDisplay="CENTER" layoutX="352.0" layoutY="74.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dry_cough_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="119.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pharyngodinia_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="164.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hemoptysis_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="209.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fatigue_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="253.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="breathe_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="297.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="diarrhea_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="341.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nausea_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="385.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="197.0" prefHeight="40.0" prefWidth="233.0" text="Productive Cough" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="p_cough_yes" layoutX="196.0" layoutY="110.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="63.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="productive_cough" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="p_cough_no" layoutX="287.0" layoutY="110.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="58.0" text="No" toggleGroup="$productive_cough" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="productive_cough_label" alignment="CENTER" contentDisplay="CENTER" layoutX="352.0" layoutY="119.0" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label layoutX="81.0" layoutY="58.0" prefHeight="40.0" prefWidth="86.0" text="Patient Id:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="443.0" layoutY="58.0" prefHeight="40.0" prefWidth="86.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="689.0" layoutY="120.0" prefHeight="595.0" prefWidth="622.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="81.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="307.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label layoutX="10.0" layoutY="247.0" prefHeight="40.0" prefWidth="233.0" text="Arthalgia" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="304.0" prefHeight="40.0" prefWidth="178.0" text="Chills" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="361.0" prefHeight="40.0" prefWidth="233.0" text="Chest Pain" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="arthalgia_yes" layoutX="183.0" layoutY="155.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="arthalgia" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="chills_yes" layoutX="183.0" layoutY="220.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="chills" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="chest_pain_yes" layoutX="183.0" layoutY="285.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="chest_pain" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="arthalgia_no" layoutX="373.0" layoutY="155.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="56.0" text="No" toggleGroup="$arthalgia" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="chills_no" layoutX="373.0" layoutY="220.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="No" toggleGroup="$chills" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="chest_pain_no" layoutX="373.0" layoutY="285.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="51.0" text="No" toggleGroup="$chest_pain" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="10.0" layoutY="112.0" prefHeight="40.0" prefWidth="233.0" text="Throat Congestion" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="233.0" text="Tonsil" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="208.0" prefHeight="40.0" prefWidth="233.0" text="Swelling" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="256.0" prefHeight="40.0" prefWidth="192.0" text="Lymph Node Enlargement" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="304.0" prefHeight="40.0" prefWidth="233.0" text="Rashes" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="352.0" prefHeight="40.0" prefWidth="233.0" text="Unconsciousness" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="t_congestion_yes" layoutX="206.0" layoutY="127.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="throat_congestion" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="tonsil_yes" layoutX="206.0" layoutY="181.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tonsil" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="swelling_yes" layoutX="206.0" layoutY="235.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="swelling" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="lymph_yes" layoutX="206.0" layoutY="289.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="lymph_node" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rashes_yes" layoutX="206.0" layoutY="342.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="rashes" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="unconsciousness_yes" layoutX="206.0" layoutY="395.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="154.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="unconsciousness" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="t_congestion_no" layoutX="287.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="52.0" text="No" toggleGroup="$throat_congestion" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="tonsil_no" layoutX="287.0" layoutY="192.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="55.0" text="No" toggleGroup="$tonsil" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="swelling_no" layoutX="287.0" layoutY="249.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="51.0" text="No" toggleGroup="$swelling" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="lymph_no" layoutX="287.0" layoutY="306.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="57.0" text="No" toggleGroup="$lymph_node" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rashes_no" layoutX="287.0" layoutY="363.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="54.0" text="No" toggleGroup="$rashes" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="unconsciousness_no" layoutX="287.0" layoutY="419.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="62.0" text="No" toggleGroup="$unconsciousness" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="arthalgia_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chills_label" alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="30.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chest_pain_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="87.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="t_congestion_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="144.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tonsil_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="201.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="swelling_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="258.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lymph_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="315.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rashes_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="372.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="unconsciousness_label" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="429.0" prefHeight="17.0" prefWidth="176.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="myalgia_label1" prefHeight="40.0" prefWidth="233.0" text="Myalgia" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="myalgia_yes" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="myalgia" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="myalgia_no" mnemonicParsing="false" prefHeight="36.0" prefWidth="55.0" text="No" toggleGroup="$myalgia" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="myalgia_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="61.0" prefHeight="64.0" prefWidth="224.0" text="Fever">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="fever_yes" layoutX="203.0" layoutY="63.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="Yes" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="fever" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="fever_no" layoutX="287.0" layoutY="63.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="55.0" text="No" toggleGroup="$fever" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="fever_level" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="155.0" textFill="#c61111" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Button fx:id="save_button" layoutX="81.0" layoutY="771.0" mnemonicParsing="false" onAction="#onSave" prefHeight="40.0" prefWidth="173.0" text="Save" />
+            <Label fx:id="id_label" layoutX="189.0" layoutY="58.0" prefHeight="40.0" prefWidth="108.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="name_label" layoutX="551.0" layoutY="58.0" prefHeight="40.0" prefWidth="367.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="edit_button" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="81.0" layoutY="771.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="40.0" prefWidth="173.0" text="Edit" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="21.0" prefWidth="1271.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="user_name" alignment="CENTER" layoutX="1031.0" layoutY="1.0" prefHeight="44.0" prefWidth="124.0" text="user" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="USER_MD" layoutX="987.0" layoutY="31.0" size="25.0" wrappingWidth="43.99996519088745" AnchorPane.rightAnchor="215.00003480911255" />
+            <Button fx:id="logout" layoutX="1234.0" layoutY="6.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: Transparent;" AnchorPane.rightAnchor="2.0">
+               <graphic>
+                  <FontAwesomeIconView disable="true" glyphName="SIGN_OUT" size="25.0" wrappingWidth="28.928571701049805" />
+               </graphic>
+            </Button>
+            <Button fx:id="back_button" layoutY="7.0" mnemonicParsing="false" onAction="#onBack" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: Transparent;">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_LEFT" size="20.0" text="" wrappingWidth="58.0" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

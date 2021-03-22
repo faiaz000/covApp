@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prescription_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e00c3606-9811-495f-9d94-a3a1a95e4d49">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="testDataSet" uuid="a0e0d512-9d59-42f3-a118-836e9370fd8f">
+		<field name="testName" class="java.lang.String"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="testName" class="java.lang.String"/>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="2" width="157" height="30" uuid="668bb4bc-3991-4532-9ad5-01f77874b2d8"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical Tests]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="236" height="30" uuid="0f550750-2924-4c1b-a7c9-6f4bea51cf3e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71e70f5a-2e16-4c74-b0dd-f42f2260631d"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{testName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

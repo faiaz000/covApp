@@ -1,0 +1,194 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: wE1Ksb+XpsDFfCdAlarFonKZ9uyou
+ tqgr6Tfft9tF5I=
+SHA-256-Digest-Manifest: XYxKRK2WybyaoPcEKDYMH8pB4AIBI5K9BKU8YkSHlfY=
+Created-By: 1.8.0_222 (Private Build)
+
+Name: at/favre/lib/bytes/BytesTransformers$GzipCompressor.class
+SHA-256-Digest: th10G5z+98HdR0MaPc4AYPX9azbRXHiVtNPDt4oA3Us=
+
+Name: at/favre/lib/bytes/BytesValidator$PrePostFix.class
+SHA-256-Digest: WtgXmbM305Msf96uU7gTDNhH9n2wzC54LB31b3X7YxE=
+
+Name: at/favre/lib/bytes/MutableBytes$1.class
+SHA-256-Digest: o2aH2QcgBr0+y39XG+0ZIuXIu6PT2IEyVnPrWLAuwuU=
+
+Name: at/favre/lib/bytes/ReadOnlyBytes$Factory.class
+SHA-256-Digest: LZYjcuqyxNRjvtUkFNl08QCi4KeJc0KQCzSSY8Amvuo=
+
+Name: at/favre/lib/bytes/BytesTransformer$BitWiseOperatorTransformer$M
+ ode.class
+SHA-256-Digest: 0gRjp3uxkJCmhmkIO49suArHWVgTO3vzyT5/nsfr32g=
+
+Name: META-INF/maven/at.favre.lib/bytes/pom.properties
+SHA-256-Digest: aR+HBdAApcSCS9LPQyk5pgX7jKjeRALgsaq/PHJEO9o=
+
+Name: at/favre/lib/bytes/BytesTransformer$1.class
+SHA-256-Digest: PYpnsCJZ/ZXPkDtqpPlETK8tXj76Unwp4RmGGBrsNB0=
+
+Name: at/favre/lib/bytes/BytesTransformers$HmacTransformer.class
+SHA-256-Digest: i/pgW6f3trhX8kgKyt1n6kTA7hEXNNPw/N26J6pjvc8=
+
+Name: at/favre/lib/bytes/BytesTransformer$ResizeTransformer$Mode.class
+SHA-256-Digest: vq9UARQJV3J0CRs3lfwSv3UGYgYFS0Vx1WOUkJzZgvM=
+
+Name: at/favre/lib/bytes/Base64.class
+SHA-256-Digest: ZobKbOFXTgcJR/X4MJmcOWXXfPdWhVCY4gSzojmasF4=
+
+Name: at/favre/lib/bytes/BytesTransformers.class
+SHA-256-Digest: mHShSTYbs/WOo9SGKzTy8JQRdAFqRp1uL/l3CrOx3UM=
+
+Name: at/favre/lib/bytes/BytesTransformer$CopyTransformer.class
+SHA-256-Digest: UGANDGsKhlT3Ipbogp55htz358Xr8xI+Lfhe/K0d6M0=
+
+Name: at/favre/lib/bytes/BytesTransformer$ConcatTransformer.class
+SHA-256-Digest: dbZR0ScmaQ7nTw0jr3ZHXcMS5qgEXZAJhsfaZs/PaTc=
+
+Name: at/favre/lib/bytes/Util$Byte.class
+SHA-256-Digest: jXcS1JgfH1XnA4Ol2KtKzNfWeSN1yRvcPlnYusl1+Rg=
+
+Name: at/favre/lib/bytes/BytesTransformer.class
+SHA-256-Digest: uhZIZnhXXjJwylyqFybwDpjoUmMkywQ1fEAYSsnNDko=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$Encoder.class
+SHA-256-Digest: hJKYI1pSAGAffPiASyFCYzhD+QoCJ5Ix/PxlQ7ddejU=
+
+Name: at/favre/lib/bytes/BytesValidators.class
+SHA-256-Digest: gsQic5oWoKCLODCBsBM9OY7meRI4BzEfpLZRhgX+0N0=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$Base64Encoding.class
+SHA-256-Digest: QME6RbMxWNeOX4xtvjTg1cjo5N6pDRqBHilOLRmblfo=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$EncoderDecoder.class
+SHA-256-Digest: 4p+YzXZbPqmPxJ3gbs/sdMl5q/oa6yZXlvyuuew3lE0=
+
+Name: at/favre/lib/bytes/BytesValidator$IdenticalContent.class
+SHA-256-Digest: w+KoJWv723rxrCYIqRH1Cm43BWpZycUr8bsIlAtF5lo=
+
+Name: META-INF/maven/at.favre.lib/bytes/pom.xml
+SHA-256-Digest: fq3Dm+dq5cIEsO5S1B+cXj2Th/sswB4ozltruRkVPTs=
+
+Name: at/favre/lib/bytes/BytesTransformers$ChecksumTransformer$Mode.cl
+ ass
+SHA-256-Digest: vpR+4Akn+5gkpgyw/QCikfcSZ30uQPjiqT5Xm67AKw8=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$Hex.class
+SHA-256-Digest: YEGc4c2ZdtJSvq2den8ICv2H/09+dw1M2Cz0qFBKfPM=
+
+Name: at/favre/lib/bytes/BytesFactory.class
+SHA-256-Digest: qXP0kZaPXgv7CBV+kP70UaOxENOpmSN811KsWKzarI0=
+
+Name: at/favre/lib/bytes/BytesTransformer$NegateTransformer.class
+SHA-256-Digest: 7ZNxDJAtiIPmzjdc315zqMAoVb8Ryr999DTjBvmAe5U=
+
+Name: at/favre/lib/bytes/BytesTransformer$BitWiseOperatorTransformer.c
+ lass
+SHA-256-Digest: 4pKuMH2ed1D2T5f28vx+dsDKTvEggmF65ra98yr7+Pk=
+
+Name: at/favre/lib/bytes/Util$Validation.class
+SHA-256-Digest: NzALpk6VmdiBWa6pk9v+JzdhS+CgQRD7diqrwkumg2k=
+
+Name: at/favre/lib/bytes/BytesTransformer$ResizeTransformer.class
+SHA-256-Digest: C6RvdEfzrscwSBm8U/+hwgxChyINnHj98EsEMXJq5Bw=
+
+Name: at/favre/lib/bytes/MutableBytes$Factory.class
+SHA-256-Digest: mCgXZRAUdVDZvD6gzF1jj14h8G1DERVLImtM7aXfr5w=
+
+Name: at/favre/lib/bytes/BytesTransformer$ShiftTransformer$Type.class
+SHA-256-Digest: i3y5BqS23QdjIn/LhlJBgIuclePLvxDsfWIQ9Q0Zg8Q=
+
+Name: at/favre/lib/bytes/BytesValidator$1.class
+SHA-256-Digest: tISvFhLk1spAQM9x4YAOe9z4P1/PsmAr6LKJewIYIl0=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$Decoder.class
+SHA-256-Digest: AUoc8VlavxSdk3+op9L4VBNWZnGf8FsRlYjGFfnGwF8=
+
+Name: at/favre/lib/bytes/Bytes.class
+SHA-256-Digest: Bcfiqfhgc7NGbEWrpVgDwmOS+31uF5C1hpfT2/wqEdk=
+
+Name: at/favre/lib/bytes/MutableBytes.class
+SHA-256-Digest: /ETz+Oo/ANRzSk0y2HEHo05vewF1cvIamz0v1e+spM4=
+
+Name: at/favre/lib/bytes/Util$BytesIterator.class
+SHA-256-Digest: LuMXxZOxgAfCPHNRwKjTACud5zKgIyEcfpSmfmBs86s=
+
+Name: at/favre/lib/bytes/BytesValidator.class
+SHA-256-Digest: hvN7vLf9EerPwUF8Coxv11/eJqAf0WAvDV3VAEER6NE=
+
+Name: at/favre/lib/bytes/BytesValidator$Length$Mode.class
+SHA-256-Digest: 0aKbVNHh30F4/iHknnmdwdlO2VpvMEIlARkkykvf2bE=
+
+Name: at/favre/lib/bytes/BytesTransformers$ChecksumTransformer.class
+SHA-256-Digest: XeLoqxqk50/M0opEuunHK28A//u4CsIgZPqZsQclrmA=
+
+Name: at/favre/lib/bytes/BytesTransformers$SortTransformer.class
+SHA-256-Digest: ce5D1nvxU2kdWcn9FXFH25nLQBZ8mSlsolvyygX+0H0=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding$BaseRadixNumber.class
+SHA-256-Digest: xbMffhVHwPoSkj9PEqEf00b90NKK8rCNo6bY0VSlFDY=
+
+Name: at/favre/lib/bytes/BytesValidator$IdenticalContent$Mode.class
+SHA-256-Digest: Hn1SvVkiHiSEWY5B8Zq5IBByowJJM78CcXjYtMBR6Qs=
+
+Name: at/favre/lib/bytes/Util$Obj.class
+SHA-256-Digest: mLlMDy1eqTTSx42c+/dlRDani/kLnu/0NArtjL6ar3U=
+
+Name: at/favre/lib/bytes/BytesValidator$Logical.class
+SHA-256-Digest: EPAi7P/XppXDyBpfjcz6/mBpLrvJUhLdXEeAOs5SweU=
+
+Name: at/favre/lib/bytes/BytesTransformer$MessageDigestTransformer.cla
+ ss
+SHA-256-Digest: UpXhQX576OmvoQYuGbyNFrFauY3dQsg9qVTUcRRSw9c=
+
+Name: at/favre/lib/bytes/ReadOnlyBytes.class
+SHA-256-Digest: 2F6wD3sQBY6txQsbaVT7vgSE3IdtjtOLFCA66XwhyP8=
+
+Name: at/favre/lib/bytes/ReadOnlyBytes$1.class
+SHA-256-Digest: 7Nt9XvSyJ2b0TyOKMWYAWeqBPe0ZG2f1iS+oVeFpcnY=
+
+Name: at/favre/lib/bytes/BinaryToTextEncoding.class
+SHA-256-Digest: khxMLZDt36SKPDYpaRBqA4XKIYj7AkE4RTpenPqfLxI=
+
+Name: at/favre/lib/bytes/Bytes$1.class
+SHA-256-Digest: mC6UOhk16Abp+z3pyOeRlOGL2s2A4AaCp9y4M8nsEeY=
+
+Name: at/favre/lib/bytes/Bytes$Factory.class
+SHA-256-Digest: 7SC2XlQovl+IozZme9QJZV0teEY/RLfEe7vQclGUk1U=
+
+Name: at/favre/lib/bytes/BytesTransformer$ShiftTransformer.class
+SHA-256-Digest: kbIXmcgZQyB+DFNlw+dAJT1YeybZpSfzplA7TxDk5uE=
+
+Name: at/favre/lib/bytes/BytesValidator$Length.class
+SHA-256-Digest: ovy2TYFe83tSoMbDA3QkOwifprR+Fh4JNQwikZFuIRY=
+
+Name: at/favre/lib/bytes/BytesValidator$Logical$Operator.class
+SHA-256-Digest: 53k0RPjtjfqV7xcgvXrEIJhjetkLSDJFCFlwDcZxycM=
+
+Name: at/favre/lib/bytes/Util.class
+SHA-256-Digest: aSwrAH6CFuIkqCE4grtMdkZ/+YsSrofTiSToVvy5g3Q=
+
+Name: at/favre/lib/bytes/BytesTransformer$ReverseTransformer.class
+SHA-256-Digest: tkD70SycPDecTMZUOH+uoARwpyzFkwV6Vnb8qs8yazU=
+
+Name: at/favre/lib/bytes/BytesTransformer$BitSwitchTransformer.class
+SHA-256-Digest: ttISWjWqIWXVrunzm8QvSy1DfHU8XSvdf+4K+cHH+WY=
+
+Name: at/favre/lib/bytes/BaseEncoding.class
+SHA-256-Digest: ZGYBzd4JJ6BsH6+ieH/v9C2GjOHiABMx3uvhcRVBLbg=
+
+Name: at/favre/lib/bytes/BaseEncoding$Alphabet.class
+SHA-256-Digest: mRR40VbB7Aq1NusGTQyx0pwPHfx4f4SsausEwn9ISa8=
+
+Name: at/favre/lib/bytes/BytesTransformers$ShuffleTransformer.class
+SHA-256-Digest: jU/eP5fAskqHP1r647IJnZNdaY00tjZ7hO6G9mnbLEQ=
+
+Name: at/favre/lib/bytes/BytesTransformers$SortTransformer$UnsignedByt
+ eComparator.class
+SHA-256-Digest: 3gWqIPhoBoRQyFC+GPpt8RLKq/Hb1FFd5WEC595XYlI=
+
+Name: at/favre/lib/bytes/Util$Converter.class
+SHA-256-Digest: VkGXuSyMuFuKKznwsl0vP0KfIXAkn81WT34CFP15sJs=
+
+Name: at/favre/lib/bytes/Util$File.class
+SHA-256-Digest: 97dGZkRNYQ9/h/NyUBe2sDYW2mybF5chXVuC0QWAMbU=
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="centerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="898.0" prefWidth="1382.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <left>
+      <AnchorPane prefHeight="796.0" prefWidth="0.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="828.0" prefWidth="1305.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" layoutX="659.0" layoutY="215.0" prefHeight="417.0" prefWidth="658.0" AnchorPane.leftAnchor="659.0" AnchorPane.topAnchor="215.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.0" minWidth="10.0" prefWidth="315.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="296.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="138.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="168.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="65.0" prefWidth="286.0" text="User Name">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="60.0" prefWidth="316.0" text="Password" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="login" alignment="BASELINE_LEFT" onAction="#onLogin" prefHeight="55.0" prefWidth="211.0" text="Login" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="loginId" alignment="BOTTOM_LEFT" onKeyTyped="#clearLabels" prefHeight="56.0" prefWidth="296.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="loginPass" alignment="BOTTOM_LEFT" onKeyTyped="#clearLabels" prefHeight="54.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label fx:id="user_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="183.0" textFill="#c61010" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="password_label" alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" layoutY="26.0" prefHeight="40.0" prefWidth="183.0" textFill="#c61010" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="40.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <AnchorPane layoutX="-1.0" layoutY="-4.0" prefHeight="907.0" prefWidth="661.0" style="-fx-background-color: #073656;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="#a4371c" focusTraversable="true" glyphName="MEDKIT" layoutX="205.0" layoutY="505.0" size="200" wrappingWidth="207.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

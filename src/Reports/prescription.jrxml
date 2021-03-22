@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prescription" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a29febc1-c573-4311-8701-8bf6b8de2e1f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="2b0ee4e5-2e1c-4927-9900-f3e382eb9d37"/>
+	<parameter name="doctorName" class="java.lang.String"/>
+	<parameter name="pName" class="java.lang.String"/>
+	<parameter name="pAge" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\JavaFXPractice\\CovApp\\src\\Reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="testList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="doctorEmail" class="java.lang.String"/>
+	<parameter name="doctorPhone" class="java.lang.String"/>
+	<field name="medicineName" class="java.lang.String"/>
+	<field name="medicineType" class="java.lang.String"/>
+	<field name="medicineAmount" class="java.lang.String"/>
+	<field name="morning" class="java.lang.Boolean"/>
+	<field name="noon" class="java.lang.Boolean"/>
+	<field name="night" class="java.lang.Boolean"/>
+	<field name="medicineDuration" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="27" width="68" height="20" uuid="06b7381a-c5a0-419f-b47d-16502e0d6597"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Doctor Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="47" width="68" height="20" uuid="69ebde30-47d8-43bc-b103-615007cc212b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Phone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="67" width="68" height="20" uuid="742a5110-0776-4abe-bb1e-ba459eaff632"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="27" width="180" height="20" uuid="b36be5eb-0084-40f5-bd3a-9dce302a2570"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="426" y="20" width="29" height="20" uuid="8f0004e2-4ebe-4747-94c1-7bdf72a18418"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="0" width="93" height="20" uuid="fd551a74-25c8-4567-8e26-d72ed89e7139"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescription]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="20" width="100" height="20" uuid="97bf018f-5059-4bfc-8492-f2656bd2d9c0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="67" width="210" height="20" uuid="4079dea8-0148-45d9-bd6d-0f7b676b8931"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorEmail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="47" width="210" height="20" uuid="5794f851-cb40-4f01-bb23-7c88c8af065d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{doctorPhone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="20" uuid="046b6c75-c03a-4659-932f-169050893c62"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Patient Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="0" width="166" height="20" uuid="17a4087d-7498-4f3b-be4f-5198c6a063b1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="236" y="0" width="29" height="20" uuid="77081fd6-e46a-490a-9fd4-ac73c64cf33c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="265" y="0" width="53" height="20" uuid="5a8528ac-589a-4523-8be2-f34166b68d24"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pAge}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="236" y="30" width="118" height="18" uuid="204abb42-4527-4ec1-bbce-eee9ebaa8ffe"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medicine List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="61" width="93" height="20" uuid="c9699418-16b3-4366-94a7-fcffc192f489"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="61" width="71" height="20" uuid="6b7940f7-6187-475a-94e3-f3790e8903fb"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="61" width="82" height="20" uuid="a17429f0-6ccb-41a4-bf7f-9e3d1b605754"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="61" width="53" height="20" uuid="55275910-cdef-4155-9107-18b71871b3d7"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Morning]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="61" width="53" height="20" uuid="840efc76-763b-4426-abfe-c8048d27bb56"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Noon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="61" width="58" height="20" uuid="cebeffc2-087b-41b5-94e5-956e357f864e"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Night]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="61" width="90" height="20" uuid="31e9c2e2-512b-417d-b834-a27298392f46"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Duration (Days)]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="91" height="20" uuid="8a0c0fcc-30e0-4ac8-be0d-8ea31c5247d5"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicineName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="93" y="0" width="71" height="20" uuid="5515d4df-68f9-4dc2-a0b0-1c6b10465d48"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicineType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="0" width="82" height="20" uuid="472533cc-6270-472a-9272-dfc5fe59446a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicineAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="0" width="53" height="20" uuid="83425099-54ab-46e1-82c6-7008cdbc580f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{morning}== Boolean.TRUE ? "Yes":"No"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="53" height="20" uuid="b755a489-f437-44ec-8cff-7cbbfd46cc93"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noon}== Boolean.TRUE ? "Yes":"No"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="0" width="58" height="20" uuid="a98c42e3-87a2-4cff-8a9b-c249e7fc7c4a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{night}== Boolean.TRUE ? "Yes":"No"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="90" height="20" uuid="1c5712ca-3e5b-4d8d-8767-40509864af1c"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicineDuration}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="139" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="9" width="551" height="1" uuid="fbfd24eb-c6c3-45ea-a03e-64a17fd78d50"/>
+			</line>
+			<subreport>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="21" width="553" height="97" uuid="c32fbcf7-8847-4c97-b2f3-1c032cff0a13"/>
+				<dataSourceExpression><![CDATA[$P{testList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "prescription_subreport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

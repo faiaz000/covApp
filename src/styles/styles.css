@@ -1,0 +1,34 @@
+ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 30, 2021, 2:36:02 AM
+    Author     : Faiaz Sharaf Uddin
+*/
+#close-btn {
+  -fx-background-color:transparent
+}
+#close-btn:hover {
+  -fx-background-color:#E81123;
+}
+.chart-bar{
+    -fx-bar-fill:#426359
+}
+.range-slider{
+   -fx-tick-label-fill: white;
+}
+
+.list-view{
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+.table-view{
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+.combo-box{
+    -fx-font-weight: bold;
+}
+

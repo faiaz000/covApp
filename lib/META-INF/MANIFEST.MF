@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Application-Name: bcrypt-cli-0.9.0-full
+Embedded-Artifacts: at.favre.lib:bcrypt-cli:0.9.0 at.favre.lib:bcrypt:
+ optimized:0.9.0 at.favre.lib:bytes:1.3.0 commons-cli:commons-cli:1.4 
+Premain-Class: Capsule
+Application-Class: at.favre.lib.crypto.bcrypt.cli.BcryptTool
+Build-Info: includeApp includeAppDep includePluginDep includeCompileDe
+ p includeRuntimeDep includeTransitiveDep
+Main-Class: Capsule
+

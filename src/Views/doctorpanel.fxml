@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.RangeSlider?>
+
+<BorderPane style="-fx-background-color: linear-gradient(#18F3FD, #073656);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DoctorpanelController">
+   <center>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" onKeyTyped="#onSearchFieldInput" prefHeight="955.0" prefWidth="1239.0">
+         <children>
+            <Label layoutX="30.0" layoutY="92.0" prefHeight="31.0" prefWidth="169.0" text="Patient List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="22.0" layoutY="250.0" prefHeight="652.0" prefWidth="1188.0" vbarPolicy="NEVER">
+               <content>
+                  <TableView fx:id="table_view" onMouseClicked="#onRowSelect" prefHeight="654.0" prefWidth="1193.0">
+                    <columns>
+                      <TableColumn fx:id="t_id" prefWidth="195.0" text="Patient Id" />
+                      <TableColumn fx:id="t_name" prefWidth="321.0" text="Patient Name" />
+                        <TableColumn fx:id="t_age" prefWidth="123.0" text="Age" />
+                        <TableColumn fx:id="t_sex" minWidth="7.0" prefWidth="125.0" text="Sex" />
+                        <TableColumn fx:id="t_marriage" prefWidth="165.0" text="Marital Status" />
+                        <TableColumn fx:id="t_children" prefWidth="263.0" text="Children" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Label layoutX="225.0" layoutY="172.0" prefHeight="25.0" prefWidth="81.0" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search_field" layoutX="336.0" layoutY="169.0" onKeyTyped="#onSearchFieldInput" prefHeight="31.0" prefWidth="573.0" />
+            <Button fx:id="reports" layoutX="1033.0" layoutY="169.0" mnemonicParsing="false" onAction="#onReportButtonClick" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: WHITE;" text="Reports">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <JFXComboBox fx:id="filter_combobox" layoutX="23.0" layoutY="172.0" onAction="#filterListener" prefHeight="25.0" prefWidth="176.0" promptText="FILTER" style="-fx-background-color: WHITE;" />
+            <RangeSlider fx:id="age_range" blockIncrement="1.0" layoutX="336.0" layoutY="167.0" lowValue="0.0" majorTickUnit="10.0" max="150.0" onDragDetected="#searchByAgeRange" prefHeight="44.0" prefWidth="573.0" showTickLabels="true" showTickMarks="true" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="1240.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="user_name" alignment="CENTER" layoutX="1115.0" layoutY="1.0" prefHeight="44.0" prefWidth="102.0" text="user" AnchorPane.rightAnchor="77.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="USER_MD" layoutX="1043.0" layoutY="30.0" size="25.0" wrappingWidth="43.99996519088745" AnchorPane.rightAnchor="207.00003480911255" />
+            <Button fx:id="logout" layoutX="1256.0" layoutY="10.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: Transparent;" AnchorPane.rightAnchor="2.0">
+               <graphic>
+                  <FontAwesomeIconView disable="true" glyphName="SIGN_OUT" size="25.0" wrappingWidth="13.928571701049805" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
